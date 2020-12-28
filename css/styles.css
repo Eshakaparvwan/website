@@ -2932,7 +2932,7 @@ input::-moz-focus-inner {
 
 .item-title {
     font-family: var(--font-2);
-    font-weight: 500;
+    font-weight: 700;
     font-size: var(--text-lg);
     line-height: var(--vspace-1_25);
     margin-top: 0;
@@ -4173,7 +4173,7 @@ html.no-csstransitions .s-hero__content {
 }
 
 .s-services .block-large-1-2 .column {
-    max-width: 30% !important;
+    max-width: 45% !important;
 }
 
 .s-services .lead {
@@ -4184,13 +4184,22 @@ html.no-csstransitions .s-hero__content {
     margin-bottom: 0;
 }
 
+.s-services .item-list .item {
+    padding-right: 1.8% !important;    
+}
+
 .service-icon {
-    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: inline;
+    float: left;
     width: calc(2.25 * var(--space));
     height: calc(2.25 * var(--space));
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    /* margin-right: auto; */
 }
 
 .service-icon--product-design {
@@ -4218,8 +4227,41 @@ html.no-csstransitions .s-hero__content {
 }
 
 .card-box {
+    overflow: hidden;
     margin: 1rem;
-    border: medium solid var(--color-1-lighter);
+    /* border: medium solid var(--color-1-lighter); */
+    padding: 1em;
+    height: 16em;
+    background-color: #092d46ab;
+    
+}
+
+.card-number {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    font-size: 105px;
+    font-weight: 800;
+    font-family: "Montserrat",sans-serif;
+    line-height: 72px;
+    opacity: 0.25;
+    color: var(--color-2);
+}
+
+.card-header {
+    margin-top: 1.5rem;
+}
+
+.card-icon {
+    display: inline;
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    float: right;
+    height: 200px;
+    width: 200px;
+    background: #3282b8 ;
+    border-radius: 50%;
 }
 
 
