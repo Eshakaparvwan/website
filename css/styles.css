@@ -4183,6 +4183,10 @@ html.no-csstransitions .s-hero__content {
     padding-bottom: var(--vspace-2);
 }
 
+.s-services .block-large-1-2 .column {
+    max-width: 30% !important;
+}
+
 .s-services .lead {
     margin-top: var(--vspace-0_25);
 }
@@ -4222,6 +4226,11 @@ html.no-csstransitions .s-hero__content {
 
 .service-icon--ecommerce {
     background-image: url(../images/icons/services/icon-ecommerce.svg);
+}
+
+.card-box {
+    margin: 1rem;
+    border: medium solid var(--color-1-lighter);
 }
 
 
