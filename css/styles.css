@@ -1,8 +1,4 @@
 /* =================================================================== 
- * Flare Main Stylesheet
- * Template Ver. 1.0.0
- * 03-19-2020
- * ------------------------------------------------------------------
  *
  * TOC:
  * # settings and variables
@@ -79,14 +75,7 @@
 
 
 
-/* ===================================================================
- * # settings and variables
- *
- * ------------------------------------------------------------------- */
 
-/* ------------------------------------------------------------------- 
- * ## fonts
- * ------------------------------------------------------------------- */
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Nunito+Sans:300,300i,400,400i,600,600i,700,700i&display=swap");
 
@@ -4247,7 +4236,7 @@ html.no-csstransitions .s-hero__content {
  * # portfolio
  *
  * ------------------------------------------------------------------- */
-.s-portfolio {
+.s-event {
     background-color: var(--color-bg);
     padding-top: calc(7 * var(--space));
     padding-bottom: 0;
@@ -4257,7 +4246,7 @@ html.no-csstransitions .s-hero__content {
 /* ------------------------------------------------------------------- 
  * ## portfolio list
  * ------------------------------------------------------------------- */
-.s-portfolio__list {
+.s-event__list {
     max-width: calc(var(--width-max) + 40px);
     padding-top: var(--vspace-1_5);
 }
@@ -4430,7 +4419,7 @@ html.no-csstransitions .s-hero__content {
  * portfolio
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1200px) {
-    .s-portfolio {
+    .s-event {
         padding-top: calc(5 * var(--space));
     }
     .folio-item__thumb a::after {
@@ -4469,7 +4458,7 @@ html.no-csstransitions .s-hero__content {
 }
 
 @media screen and (max-width: 400px) {
-    .s-portfolio {
+    .s-event {
         padding-top: var(--vspace-4);
     }
 }
