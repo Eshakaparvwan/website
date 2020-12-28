@@ -1,7 +1,4 @@
-/* ===================================================================
- * Flare 1.0.0 - Main JS
- *
- * ------------------------------------------------------------------- */
+
 
 (function($) {
 
@@ -14,10 +11,7 @@
     const $WIN = $(window);
 
 
-    // Add the User Agent to the <html>
-    // will be used for IE10/IE11 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; rv:11.0))
-    // const doc = document.documentElement;
-    // doc.setAttribute('data-useragent', navigator.userAgent);
+ 
 
 
    /* preloader
