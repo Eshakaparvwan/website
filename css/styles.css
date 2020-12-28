@@ -4251,6 +4251,12 @@ html.no-csstransitions .s-hero__content {
     padding-top: var(--vspace-1_5);
 }
 
+.s-event .block-large-1-2 .column{
+    margin: 1.2%;
+    max-width: 30%;
+    box-shadow: 0px 0px 10px 0px rgba(99, 240, 250, 0.5);
+}
+
 .folio-item {
     position: relative;
     overflow: hidden;
