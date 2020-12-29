@@ -1,9 +1,9 @@
 const cacheName = "WWW_TECHSOC_MSIT_V1";
 const cacheAssests = [
-  "offline.html",
-  "/js/offline.js",
-  "/js/hammer.min.js",
-  "/css/offline.css",
+  "/website/offline.html",
+  "/website/js/offline.js",
+  "/website/js/hammer.min.js",
+  "/website/css/offline.css",
 ];
 
 self.addEventListener("install", (e) => {
