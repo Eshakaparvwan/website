@@ -4055,7 +4055,7 @@ html.no-csstransitions .s-hero__content {
 }
 
 .s-about__photo {
-    background-image: url(../images/about-photo.jpg);
+    background-image: url(../images/LOGO_techsoc_2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -4065,6 +4065,8 @@ html.no-csstransitions .s-hero__content {
     left: var(--gutter-lg);
     bottom: var(--vspace-1);
 }
+
+
 
 
 /* ------------------------------------------------------------------- 
@@ -4102,6 +4104,13 @@ html.no-csstransitions .s-hero__content {
     position: relative;
 }
 
+.s-about .s-about__process .column{
+    max-width: 33% ;
+}
+
+.s-about__process .item{
+    padding-right: 2em;
+}
 
 /* ------------------------------------------------------------------- 
  * responsive:
