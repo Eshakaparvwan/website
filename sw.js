@@ -54,7 +54,7 @@ self.addEventListener("fetch", (e) => {
             e.request.headers.get("accept").includes("text/html") &&
             e.request.method == "GET";
 
-          if (isHTMLPage) return caches.match("/offline.html");
+          if (isHTMLPage) return caches.match("/website/offline.html");
         });
     })
   );
