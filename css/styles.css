@@ -3495,6 +3495,21 @@ input::-moz-focus-inner {
     left: 36.5vw;
 }
 
+@media(max-width: 768px){
+    .s-hero__bg {
+        background-image: none;
+    }
+    .s-about .s-about__process .column {
+        max-width: 100% !important;
+    }
+    .s-services .block-large-1-2 .column{
+        max-width: 100% !important;
+    }
+    .s-event .block-large-1-2 .column{
+        max-width: 100% !important;
+    }
+}
+
 .s-hero__bg::after {
     display: block;
     content: "";
@@ -4182,7 +4197,7 @@ html.no-csstransitions .s-hero__content {
 }
 
 .s-services .block-large-1-2 .column {
-    max-width: 48% !important;
+    max-width: 48% ;
 }
 
 .s-services .lead {
