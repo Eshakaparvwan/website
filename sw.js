@@ -39,19 +39,23 @@ self.addEventListener("activate", (e) => {
 
 self.addEventListener("fetch", (e) => {
   console.log("Fetching from Cache");
-  e.respondWith(
-    fetch(e.request)
-      .then((res) => {
-        console.log(res);
-        if (res.status >= 400) {
-          res.url = "http://127.0.0.1:5500/offline.html";
-        }
 
-        return res;
-      })
-      .catch((res) => {
-        console.log("from cache", res);
-        return caches.match(e.request);
-      })
+  e.respondWith(
+    caches.match(e.request).then((cachedRes) => {
+      if (cachedRes) {
+        console.log("Page found in Cache");
+        return cachedRes;
+      }
+
+      return fetch(e.request)
+        .then((fetchRes) => fetchRes)
+        .catch((err) => {
+          const isHTMLPage =
+            e.request.headers.get("accept").includes("text/html") &&
+            e.request.method == "GET";
+
+          if (isHTMLPage) return caches.match("/offline.html");
+        });
+    })
   );
 });
