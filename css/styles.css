@@ -252,7 +252,9 @@
         --space         : 2.8rem;
     }
 }
-
+body{
+    overflow-x: hidden;
+}
 body::-webkit-scrollbar {
     width: 0.3em;
   }
@@ -3508,6 +3510,10 @@ input::-moz-focus-inner {
     .s-event .block-large-1-2 .column{
         max-width: 100% !important;
     }
+    .card-number, .card-icon{
+        display: none !important;
+    }
+
 }
 
 .s-hero__bg::after {
