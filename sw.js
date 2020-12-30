@@ -1,9 +1,9 @@
 const cacheName = "WWW_TECHSOC_MSIT_V1";
 const cacheAssests = [
-  "/website/offline.html",
-  "/website/js/offline.js",
-  "/website/js/hammer.min.js",
-  "/website/css/offline.css",
+  "/offline.html",
+  "/js/offline.js",
+  "/js/hammer.min.js",
+  "/css/offline.css",
 ];
 
 self.addEventListener("install", (e) => {
@@ -54,7 +54,7 @@ self.addEventListener("fetch", (e) => {
             e.request.headers.get("accept").includes("text/html") &&
             e.request.method == "GET";
 
-          if (isHTMLPage) return caches.match("/website/offline.html");
+          if (isHTMLPage) return caches.match("/offline.html");
         });
     })
   );
